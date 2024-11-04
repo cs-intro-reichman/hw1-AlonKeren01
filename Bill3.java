@@ -10,7 +10,7 @@ public class Bill3 {
 		double sum1 = (double)sum;
 		sum1 = sum1 / 3;
 		sum1 = Math.ceil(sum1);
-		System.out.println("Dear " + name1 + ", " + name2 + ", and " + name3 + ": pay " + sum1 + " Shekels each");
+		System.out.println("Dear " + name3 + ", " + name2 + ", and " + name1 + ": pay " + sum1 + " Shekels each");
 	    // Replace this comment with the rest of your code   
 	}
 }

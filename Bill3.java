@@ -6,7 +6,7 @@ public class Bill3 {
 		String name2 = args[1];
 		String name3 = args[2];
 		int sum = Integer.parseInt(args[3]);
-		// check
+
 		double sum1 = (double)sum;
 		sum1 = sum1 / 3;
 		sum1 = Math.ceil(sum1);

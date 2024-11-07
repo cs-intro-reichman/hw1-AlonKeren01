@@ -4,29 +4,18 @@ public class Ascend {
 	public static void main(String[] args) {
 		int lim = Integer.parseInt(args[0]);
 
-		int a = (int)(Math.random() * lim);
-		int b = (int)(Math.random() * lim);
-		int c = (int)(Math.random() * lim);
+		int a = (int)((Math.random() * lim)+ 1);
+		int b = (int)((Math.random() * lim)+ 1);
+		int c = (int)((Math.random() * lim)+ 1);
 
 		System.out.println(a + " " + b + " " + c);
-		
-		int max = (int)(Math.max(a, b));
-		int mid = 0;
-		int min = (int)(Math.min(a, b));
+		int max1 = Math.max(a, b);
+		int max = Math.max(max1, c); //the biggest
 
-		if (Math.max(c, max) == c){
-			mid = max;
-			max = c;	
-		}
+		int min1 = Math.min(a, c);
+		int min = Math.min(min1, b); //the smallest
 
-		else if (Math.min(c, min) == c){
-			mid = min;
-			min = c;
-		}
-
-		else {
-			mid = c;
-		}
+		int mid = (a + b + c) - (max + min);
 
 		System.out.println(min + " " + mid + " " + max);
 		

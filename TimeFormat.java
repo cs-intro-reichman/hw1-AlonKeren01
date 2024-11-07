@@ -21,7 +21,7 @@ public class TimeFormat {
 			finalTime = Integer.toString(hours) + ":";
 		}
 
-		else if (hours <= 12){
+		else if (hours < 12){
 			suffix = "AM";
 		}
 
